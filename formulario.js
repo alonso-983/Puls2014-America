@@ -3,7 +3,7 @@ var $form = $('#formulario'),
     $url = $('#url'),
     $button = $('#mostrar-form'),
     $list = $('#contenido'),
-    $post = $('.item').first();
+    $post = $('.item').first();//class item del article
 
 
  
@@ -13,9 +13,9 @@ function mostrarFormulario(){
 }                 //por causa de q #mostrar-form tiene un link
  
 function agregarPost(){
-	var url = $url.val(),
-	    titulo = $titulo.val(),
-	    $clone = $post.clone();
+	var url    = $url.val(),
+	    titulo = $titulo.val(),//val jala el valor dentro del input
+	    $clone = $post.clone();//clone ..clona el post
 
 	$clone.find('.titulo_item a')
 	     .text(titulo)
