@@ -17,9 +17,9 @@ function agregarPost(){
 	    titulo = $titulo.val(),//val jala el valor dentro del input
 	    $clone = $post.clone();//clone ..clona el post
 
-	$clone.find('.titulo_item a')
-	     .text(titulo)
-	     .attr('href', url);
+	$clone.find('.titulo_item a')//find es econtrar
+	     .text(titulo)//le pasamos el valor de la variable titulo
+	     .attr('href', url);//attr para modificar atributos
 
 	$clone.hide();
 	$list.prepend($clone);
